@@ -14,11 +14,14 @@ class One extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
-
-    this.mainTask(0, 1000, 0);
+    this.mainTask();
   }
 
-  mainTask = (n, max, sum) => {
+  mainTask = () => {
+    this.sumMultiples3And5(0, 1000, 0);
+  }
+
+  sumMultiples3And5 = (n, max, sum) => {
     if (n >= max) {
       this.setState({result: sum});
       return;
@@ -29,7 +32,7 @@ class One extends Component {
     }
 
     setTimeout(() => {
-      this.mainTask(n + 1, max, sum);
+      this.sumMultiples3And5(n + 15, max, sum);
     }, 0);
   }
 

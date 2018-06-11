@@ -8,7 +8,7 @@ class Results extends Component {
       <div>
         <h3>Results</h3>
         <div>Result: {this.props.result}</div>
-        <div>Time: {this.props.time}</div>
+        {/* <div>Time: {this.props.time}</div> */}
       </div>
     );
   }
